@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Mark's Blog</title>
+
+        <!--font awesome icons cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--swiper slider css file-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.css" integrity="sha512-Ja1oxinMmERBeokXx+nbQVVXeNX771tnUSWWOK4mGIbDAvMrWcRsiteRyTP2rgdmF8bwjLdEJADIwdMXQA5ccg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--custom style-->
+        
+
+        </head>
+        <body>
+
+            <!--Header-->
+            <header id="header" class="shadow bg-light">
+                <nav class="container navbar">
+                    <a href="/mark.html" class="nav-brand text-dark">
+                        My Anime Blog Site
+                    </a>
+
+                    <!--toggle button-->
+                    <button class="toggle-button">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+
+                    <!--collapse on toggle button click-->
+                    <div class="collapse"> 
+                        <ul class="navbar-nav">
+                            <a href="mark.html" class="nav-link2">Home</a>
+                            <a href="https://www.cbr.com/how-you-can-support-anime-industry/" class="nav-link2">Support</a>
+                            <a href="Categories.html" class="nav-link2">Categories</a>
+                            <a href="About.html" class="nav-link2">About</a>
+                            <a href="#" class="nav-link2">Contact</a>
+                        </ul>
+                    </div>
+
+                     <!--collapse on toggle button click-->
+                     <div class="collapse">
+                        <ul class="navbar-nav">
+                        <div class="search-box">
+                            <input class="search-bar" type="textbox" placeholder="Search">
+                        
+                        <a href="https://www.facebook.com/" class="nav-link2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/home" class="nav-link2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" class="nav-link2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" class="nav-link2"><i class="fab fa-youtube"></i></a>
+                        </ul>
+                     </div>
+                </nav>
+            </header>
+            <style>              @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
+                /*root styling */
+                
+                :root{
+                    --light: #f8f9fa;
+                    --secondary: #adb5bd;
+                    --dark: #343a40;
+                    --primary-color: #f15bb5;
+                    --secondary-color: #2ec4b6;
+                    --border: #e9ecef;
+                }
+                p{
+                        display: block;
+                        text-align: center;
+                        margin-left: 50px;
+                        color: #f15bb5;
+                }
+                body{
+                    font-family: 'Roboto', sans-serif;
+                    padding: 0;
+                    margin: 0;
+                    background: url('./background/background6.gif')no-repeat fixed center;
+                    background-size: cover;
+                }
+                
+                a{
+                    text-decoration: none;
+                    display: inline-block; 
+                
+                }
+                
+                *>*{
+                    box-sizing: border-box;
+                }
+                
+                /*global styling */
+                    .text-light{
+                            color:var(--light);
+                    }
+                    .text-secondary{
+                        color:var(--secondary);
+                    }
+                    .text-dark{
+                        color: #f15bb5;
+                    }
+                    .text-primary{
+                        color:var(--primary-color);
+                
+                    }
+                    .bg-light{
+                        background-color: var(--light);
+                    }
+                
+                    .container{
+                        max-width: 1200px;
+                        padding: 0 15;
+                        margin: 0 15px;
+                        display: inline-block;
+                    }
+                
+                    .img-fluid{
+                        width: 30%;
+                        margin-block: 15px;
+                        margin-inline-end: 1em;
+                        border-radius: 20px;
+                    }
+                    .img-fluid2{
+                        width: 30%;
+                        margin-block: 15px;
+                        margin-inline-end: 1em;
+                    }
+                    .text-title{
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: bold
+                    }
+                
+                    .secondary-title{
+                        font-family:'Poppins', sans-serif; ;
+                    }
+                
+                    .display-1{
+                        font-size: 30px;
+                        margin-left: 10px;
+                        display: block;
+                        color: #343a40;
+                    }
+                
+                    .display-2{
+                        font-size: 25px;
+                        margin-left: 50px;
+                    }
+                
+                    .display-3{
+                        font-size: 20px;
+                        margin-left: 50px;
+                        
+                    }
+                
+                    .text-center{
+                        text-align: center;
+                    }
+                    .text-right{
+                        text-align: right;
+                    }
+                   
+                    .btn{
+                        padding: 15px 20px;
+                        border: 50px;
+                    }
+                
+                    .btn-primary{
+                        border-radius: 4px;
+                        background-color: var(--secondary-color);
+                        width: 20%;
+                        display: inline-block;
+                    }
+                
+                
+                
+                
+                /*section styling */
+                
+                /*-------Navigation Menu--------*/
+                .navbar{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 10px;
+                    background-color: lightgrey;
+                }
+                
+                .nav-brand{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: bold;
+                    align-self: center;
+                    font-size: 32px;
+                    font-stretch: expanded;
+                }
+                
+                .collapse{
+                    align-self: center;
+                }
+                
+                .nav-link{
+                    font-size: 30px;
+                    margin: 12px;
+                    color:var(--secondary-color);
+                    font-family: 'Poppins', sans-serif;
+                    display: block;
+                    cursor: pointer;
+                    margin-right: 50px;
+                }
+                
+                .nav-link:hover{
+                    color: var(--primary-color)
+                }
+                
+                .nav-link2{
+                    font-size: 18px;
+                    margin: 5px;
+                    color:var(--dark);
+                    font-family: 'Poppins', sans-serif;
+                }
+                .nav-link2:hover{
+                    color: var(--primary-color);
+                }
+                .nav-link3{
+                    font-size: 30px;
+                    margin: 12px;
+                    color:var(--dark);
+                    font-family: 'Poppins', sans-serif;
+                    display: inline-block;
+                    margin-left: 10px;
+                    margin-bottom: 50px;
+                }
+                
+                
+                
+                .search-bar{
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                
+                }
+                .toggle-button{
+                    font-size: 21px;
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    right: 0;
+                    margin: 8px 10px;
+                    display: none;
+                }
+                
+                .toggle-button:focus{
+                    outline: none;
+                
+                }
+                
+                /*------Navigation Menu--------*/
+                
+                /*------Main Section--------*/
+                
+                #site-main{
+                    margin-top: 8em;
+                }
+                
+                #posts{
+                    margin-bottom: 5em;
+                }
+                
+                .grid{
+                    margin: 0 auto;
+                }
+                
+                .grid .grid-item{
+                    width: calc(33.3333% - 20px);
+                    margin-bottom: 3em;
+                }
+                
+                
+                /*------.Main Section--------*/
+                
+                
+                /*Media Query */
+                
+                @media (max-width:992px){
+                    .navbar{
+                        flex-direction: column;
+                    }
+                }
+                
+                
+                @media (max-width:574px){
+                    .toggle-button{
+                        display: inline-block;
+                    }
+                    
+                    .collapse{
+                        max-height: 0;
+                        overflow: hidden;
+                    }
+                
+                    .collapse .nav-link{
+                        display: block;
+                        text-align: center;
+                    }
+                
+                    .search-box{
+                        border-right: none;
+                    }
+                
+                    .collapse-toggle{
+                        max-height:500px;
+                    }
+                   
+                }</style>
+        </body>
+        <p>The word anime — pronounced "ah-knee-may" — is an abbreviation of the word animation. In Japan, the word is used to refer to all animation. However, outside of Japan, it has become the catch-all term for animation from Japan.
+
+            For decades, anime was produced by and for Japan — a local product, with a distinct look-and-feel to not just the artwork but the storytelling, the themes, and the concepts. Over the last forty years, it has become an international phenomenon, attracting millions of fans and being translated into many languages. A whole generation of viewers in the West has grown up with it and are now passing it on to their own children.
+            
+            Because all things anime tend to be lumped together, it's tempting to think of anime as a genre. It isn't, at least no more than animation itself is a genre, but rather a description of how the material is produced. Anime shows, like books or movies, fall into any number of existing genres: comedy, drama, sci-fi, action-adventure, horror and so on.
+            
+            What Makes Anime So Special?
+            Most anime fans can sum this up in two words: "It's different." Anime is as unlike most American cartoons like "Batman" and "Spider-Man" are different from the comics that run in daily papers. These differences show up in many ways including the artwork storytelling, breadth of material and even cultural nuances exhibited by the characters.
+            
+            Anime art styles range from the flamboyant and outlandish in shows like "Samurai Champloo" and " FLCL" to the simple and direct in shows like "Azumanga Daioh!." That said, even shows with more "basic" artwork can still be visually striking. Anime has this way of making everything look fresh and new.
+            
+            It doesn't shy away from epic storylines, either, which often run for dozens (sometimes hundreds) of episodes. The best anime, though, no matter what their length, all demand great emotional involvement from the viewer. 
+            
+            The sheer range of anime shows out there means a fan of most any other kind of TV or movie can find an anime series that mirrors its style. For fans of hard science fiction, the show "Planetes" would be perfect for you; romantic comedy fans will love "Fruits Basket" while crimefighting lovers will enjoy "Ghost in the Shell." There are even adaptations of classical literature like "The Count of Monte Cristo."
+            
+            Not only that, fans of anime also get an intimate look into Japan's history, language and worldview, woven into a great deal of anime on many levels. Some shows are takeoffs on Japanese history like "Sengoku Basara" or raid Japanese mythology for story ideas like "Hakkenden" or "Hell Girl." Even shows that are outwardly non-Japanese in their presentation like "Claymore" and "Monster" have tinges of a Japanese sensibility to them.
+            
+            What's most striking is how anime's impact is coming full circle. Some recent American cartoon productions, like "Avatar: The Last Airbender," are openly inspired by anime itself, and live-action English-language versions of anime titles are starting to come into production more frequently. 
+            
+            Is Anime Okay for Young Kids?
+            Because anime's so broad-reaching in its subject matter, it's possible to find anime aimed at just about every age group. Some titles are specifically for younger viewers or are suitable for all ages like the animated series "Pokémon" or Studio Ghibli film "My Neighbor Totoro" while others are aimed at teenage audiences and older like "InuYasha." There are even some animes aimed at older teens like "Death Note" and some for mature audiences only like "Monster" and "Queens Blade." 
+            
+            Japanese cultural attitudes about sexuality and violence require some titles to be placed a category higher than they might normally be. Nudity, for instance, is handled much more casually in Japan; sometimes a show that isn't meant specifically for adults will have material which may seem racy to Western viewers.
+            
+            Anime distributors are generally quite conscious of these issues and will include either an actual MPAA rating (G, PG, PG-13, R, NC-17) or a TV Parental Guidelines rating as an indicator of what the intended audience is for the show. Check the show's packaging or program listing to see which rating applies.
+            
+            Confused about where to start? We recommend checking out the sci-fi, cyberpunk "Cowboy Bebop" or a swords-and-sorcery tale called "Berserk." If you already know a friend who's an anime fan, clue them in on what you like to watch — they should be able to guide you towards what's best and what's new in that category.</p>
